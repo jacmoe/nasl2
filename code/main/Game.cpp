@@ -1,5 +1,4 @@
-```
-# The
+/*# The
 # ███╗   ██╗ █████╗ ███████╗██╗     ██████╗ 
 # ████╗  ██║██╔══██╗██╔════╝██║     ╚════██╗
 # ██╔██╗ ██║███████║███████╗██║      █████╔╝
@@ -13,7 +12,33 @@
 #   (c) 2021 Jacob Moena
 #
 #   Zlib License
-#
-```
+#*/
+#include "Game.hpp"
 
-Nasl 2 is not another sixteenbit library
+Game::Game()
+{
+}
+
+Game::~Game()
+{
+}
+
+bool Game::OnUserCreate()
+{
+    return true;
+}
+
+bool Game::OnUserUpdate(double deltaTime)
+{
+    return true;
+}
+
+bool Game::OnUserRender()
+{
+    return true;
+}
+
+bool Game::OnUserDestroy()
+{
+    return true;
+}

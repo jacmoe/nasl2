@@ -1,5 +1,4 @@
-```
-# The
+/*# The
 # ███╗   ██╗ █████╗ ███████╗██╗     ██████╗ 
 # ████╗  ██║██╔══██╗██╔════╝██║     ╚════██╗
 # ██╔██╗ ██║███████║███████╗██║      █████╔╝
@@ -13,7 +12,20 @@
 #   (c) 2021 Jacob Moena
 #
 #   Zlib License
-#
-```
+#*/
+#pragma once
 
-Nasl 2 is not another sixteenbit library
+#include "Application.hpp"
+
+class Game : public Application
+{
+public:
+    Game();
+    ~Game();
+
+protected:
+    bool OnUserCreate() override;
+    bool OnUserUpdate(double deltaTime) override;
+    bool OnUserRender() override;
+    bool OnUserDestroy() override;
+};
