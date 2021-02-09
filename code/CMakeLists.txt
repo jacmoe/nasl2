@@ -13,7 +13,7 @@
 #
 #   Zlib License
 #
-set(TARGET_NAME raystart)
+set(TARGET_NAME nasl2)
 
 set(main
     ./main/Application.cpp
@@ -33,4 +33,4 @@ add_executable(${TARGET_NAME}
     ${utility}
 )
 
-target_link_libraries(${TARGET_NAME} PUBLIC glew::glew glfw)
+target_link_libraries(${TARGET_NAME} PUBLIC glew::glew glfw glfwm)

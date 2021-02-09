@@ -41,4 +41,6 @@ include_directories(
     ./code/utility
 )
 
+add_subdirectory(glfwm)
+
 add_subdirectory(code)
